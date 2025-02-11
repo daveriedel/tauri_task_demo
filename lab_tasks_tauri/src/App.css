@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lapis-lazuli: #33658a;
+  --color-lapis-lazuli-100: #0a141c;
+  --color-lapis-lazuli-200: #142837;
+  --color-lapis-lazuli-300: #1f3c53;
+  --color-lapis-lazuli-400: #29506e;
+  --color-lapis-lazuli-500: #33658a;
+  --color-lapis-lazuli-600: #4486b9;
+  --color-lapis-lazuli-700: #72a5cb;
+  --color-lapis-lazuli-800: #a1c3dc;
+  --color-lapis-lazuli-900: #d0e1ee;
+
+  --color-carolina-blue: #86bbd8;
+  --color-carolina-blue-100: #112935;
+  --color-carolina-blue-200: #22516a;
+  --color-carolina-blue-300: #347a9f;
+  --color-carolina-blue-400: #529ec7;
+  --color-carolina-blue-500: #86bbd8;
+  --color-carolina-blue-600: #a0c9e0;
+  --color-carolina-blue-700: #b7d7e8;
+  --color-carolina-blue-800: #cfe4f0;
+  --color-carolina-blue-900: #e7f2f7;
+
+  --color-charcoal: #2f4858;
+  --color-charcoal-100: #090e11;
+  --color-charcoal-200: #131c22;
+  --color-charcoal-300: #1c2b34;
+  --color-charcoal-400: #253945;
+  --color-charcoal-500: #2f4858;
+  --color-charcoal-600: #496f87;
+  --color-charcoal-700: #6c96b0;
+  --color-charcoal-800: #9db9ca;
+  --color-charcoal-900: #cedce5;
+
+  --color-hunyadi_yellow: #f6ae2d;
+  --color-hunyadi_yellow-100: #382502;
+  --color-hunyadi_yellow-200: #704a05;
+  --color-hunyadi_yellow-300: #a76f07;
+  --color-hunyadi_yellow-400: #df9409;
+  --color-hunyadi_yellow-500: #f6ae2d;
+  --color-hunyadi_yellow-600: #f8bf57;
+  --color-hunyadi_yellow-700: #facf81;
+  --color-hunyadi_yellow-800: #fbdfab;
+  --color-hunyadi_yellow-900: #fdefd5;
+
+  --color-orange_pantone: #f26419;
+  --color-orange_pantone-100: #321303;
+  --color-orange_pantone-200: #642706;
+  --color-orange_pantone-300: #963a09;
+  --color-orange_pantone-400: #c84e0c;
+  --color-orange_pantone-500: #f26419;
+  --color-orange_pantone-600: #f48346;
+  --color-orange_pantone-700: #f7a274;
+  --color-orange_pantone-800: #fac1a2;
+  --color-orange_pantone-900: #fce0d1;
+}
+.logo.vite:hover {
+  filter: drop-shadow(0 0 2em #747bff);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafb);
+}
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #0f0f0f;
+  background-color: #f6f6f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  margin: 0;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: 0.75s;
+}
+
+.logo.tauri:hover {
+  filter: drop-shadow(0 0 2em #24c8db);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  @apply text-4xl font-bold;
+}
+
+h2 {
+  @apply text-2xl font-bold;
+}
+
+h3 {
+  @apply text-xl font-bold;
+}
+
+input,
+button {
+  cursor: pointer;
+}
+
+#greet-input {
+  margin-right: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f6f6f6;
+    @apply bg-lapis-lazuli-400;
+  }
+
+  a:hover {
+    color: #24c8db;
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="C:/Users/dave-/AppData/Local/Android/Sdk/platforms/android-32/android.jar"/>
+	<classpathentry kind="lib" path="E:/lab/lab_tasks/tauri-plugin-dialer/android/build/intermediates/javac/debugAndroidTest/classes"/>
+	<classpathentry kind="lib" path="C:/Users/dave-/AppData/Local/Android/Sdk/build-tools/30.0.3/core-lambda-stubs.jar"/>
+	<classpathentry kind="lib" path="."/>
+</classpath>

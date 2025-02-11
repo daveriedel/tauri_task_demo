@@ -1,0 +1,30 @@
+[package]
+name = "tauri-plugin-filepicker"
+version = "0.1.0"
+authors = ["You"]
+description = ""
+edition = "2021"
+rust-version = "1.77.2"
+exclude = ["/examples", "/dist-js", "/guest-js", "/node_modules"]
+links = "tauri-plugin-filepicker"
+
+[dependencies]
+tauri = { version = "2.2.3" }
+serde = "1.0"
+thiserror = "2"
+
+[build-dependencies]
+tauri-plugin = { version = "2.0.3", features = ["build"] }
+
+[package.metadata.docs.rs]
+rustc-args = ["--cfg", "docsrs"]
+rustdoc-args = ["--cfg", "docsrs"]
+targets = ["x86_64-linux-android"]
+cargo.target = "x86_64-linux-android"
+
+[package.metadata.platforms.support]
+windows = { level = "none", notes = "" }
+linux = { level = "none", notes = "" }
+macos = { level = "none", notes = "" }
+android = { level = "full", notes = "" }
+ios = { level = "full", notes = "" }
