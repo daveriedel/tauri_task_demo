@@ -4,11 +4,24 @@
 I've made this repository to demonstrate the cross-platform capabilities of Tauri 2.0.
 This application targets Desktop and Android platforms. 
 
-## Lab tasks srv
+## Required
+### Tauri
+Follow the steps on the Tauri prerequisites page:
+https://tauri.app/start/prerequisites
+### Package manager
+I've used pnpm to build the Tauri application. 
+You can install pnpm using (the last npm command you need...):
+```bash
+npm install -g pnpm@latest-10
+```
+
+## Modules
+
+### Lab tasks srv
 
 This module contains a Rust server. This server is added to demonstrate external communication from the Tauri application.
 
-### How to run
+#### How to run
 ```bash
 cd lab_tasks_srv
 cargo run
@@ -17,11 +30,19 @@ cargo run
 cargo watch -x run
 ```
 
-## Lab tasks Tauri
+### Lab tasks Tauri
 
 This module contains the React front end and the corresponding crates.
 
-### How to run
+#### Setup
+The application uses an .env file to point to the target server for external requests.
+Make sure to place the .env file in the lab_tasks_tauri folder.
+An example .env file contains:
+```text
+VITE_BASE_URL = http://localhost:8080
+```
+
+#### How to run
 ```bash
 cd lab_tasks_tauri
 pnpm I
@@ -32,19 +53,21 @@ pnpm run tauri dev
 pnpm run tauri android dev
 ```
 
-## Lab tasks types
+#### 
+
+### Lab tasks types
 
 This module contains the crate of types shared by the front and back.
 
-## Dialer plugin
+### Dialer plugin
 
 The Tauri plugin focussed on demonstrating the communication from the front end to the Tauri core.
 
-## Filepicker plugin
+### Filepicker plugin
 
 Tauri plugin focussed on demonstrating the communication between the backend and front end.
 
-### How to create a Tauri Android plugin
+## How to create a Tauri Android plugin
 ```bash
 # Initialize core plugin
 npx @tauri-apps/cli plugin new [name]
