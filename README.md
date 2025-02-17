@@ -1,4 +1,8 @@
 # Tasks app
+![image](https://github.com/user-attachments/assets/c6932c72-9b5d-4907-b7e7-0d491d2e9247)
+
+I've made this repository to demonstrate the cross-platform capabilities of Tauri 2.0.
+This application targets Desktop and Android platforms. 
 
 ## Lab tasks srv
 
